@@ -48,7 +48,8 @@ def student_api(request, pk = None):
 		stu = Student.objects.get(pk = id) 
 		stu.delete()
 		return Response({'msg':'data deleted'})
-	return Response({'msg':'id not in the database'})  
+
+	   
 
 
 
